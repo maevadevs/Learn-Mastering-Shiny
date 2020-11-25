@@ -39,7 +39,7 @@
 - [Awesome Shiny Extensions](https://github.com/nanxstats/awesome-shiny-extensions)
 - [Shiny In Production](https://rstudio.com/resources/rstudioconf-2019/shiny-in-production-principles-practices-and-tools/)
 - [eBook: R for Data Science](https://r4ds.had.co.nz/)
-- [eBook: Advnced R](https://adv-r.hadley.nz/)
+- [eBook: Advanced R](https://adv-r.hadley.nz/)
 - [eBook: R Packages](https://r-pkgs.org/)
 - [eBook: `bookdown`: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/)
 - [eBook: Geocomputation with R](https://geocompr.robinlovelace.net/)
