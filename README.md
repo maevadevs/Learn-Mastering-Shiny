@@ -1,6 +1,8 @@
 # [Mastering Shiny](https://mastering-shiny.org/)
 
-Notes from reading Mastering Shiny
+Just my notes from reading *Mastering Shiny*
+
+## Contents
 
 1. Preface
 1. Your first Shiny app
