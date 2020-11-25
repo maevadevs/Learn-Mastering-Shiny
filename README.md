@@ -5,7 +5,7 @@ Just my notes from reading *Mastering Shiny*
 ## Contents
 
 1. [Introduction](https://github.com/maevadevs/mastering-shiny/blob/main/introduction.md)
-1. Your first Shiny app
+1. [Hello Shiny](https://github.com/maevadevs/mastering-shiny/blob/main/hello-shiny.md)
 1. Basic UI
 1. Basic reactivity
 1. Case study: ER injuries
