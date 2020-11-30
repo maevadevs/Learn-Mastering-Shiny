@@ -108,10 +108,10 @@ output$ID <- renderTYPE({
 
 ## Reducing Duplications
 
-- We should always stive to reduce duplicated codes as much as possible
+- We should always strive to reduce duplicated codes as much as possible
 - Typical R solutions: Use *Variables* or use *Functions*
 - With Shiny: Use *Reactive Expressions*
-  - Wrap a block of code in `reactive({...})` and assigning it to a variable
+  - Wrap a block of code in `reactive({...})` and assign it to a variable
   - Use by calling it like a function
 - Difference with function: **It only runs the first time it is called and then it caches its result until it needs to be updated.**
   - More efficient because of caching
