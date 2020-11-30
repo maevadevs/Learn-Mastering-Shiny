@@ -1,6 +1,6 @@
 # [Mastering Shiny](https://mastering-shiny.org/)
 
-Just my notes from reading *Mastering Shiny*
+My personal notes from reading the book *[Mastering Shiny]*(https://mastering-shiny.org/)
 
 ## Parts
 
