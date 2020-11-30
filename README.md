@@ -2,7 +2,7 @@
 
 My personal notes from reading the book [*Mastering Shiny*](https://mastering-shiny.org/).
 
-## Parts
+## Parts Overview
 
 1. **Getting started**
 - The basics of Shiny
@@ -25,7 +25,7 @@ My personal notes from reading the book [*Mastering Shiny*](https://mastering-sh
 - How to test your code to ensure it’s correct
 - How to measure and improve performance
 
-## Contents
+## Table of Contents
 
 ### Getting Started 
 
