@@ -1,6 +1,6 @@
 # [Mastering Shiny](https://mastering-shiny.org/)
 
-My personal notes from reading the book [*Mastering Shiny*](https://mastering-shiny.org/), by Hadley Wickham.
+These are my personal notes from reading the book [*Mastering Shiny*](https://mastering-shiny.org/), by Hadley Wickham.
 
 ## Parts Overview
 
