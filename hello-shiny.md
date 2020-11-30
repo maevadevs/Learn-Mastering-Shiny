@@ -63,32 +63,72 @@ To stop the app:
 ```R
 # Define UI
 ui <- fluidPage(
+  # A dropdown
   selectInput("dataset", label = "Dataset", choices = ls("package:datasets")),
+  # A text output for codes
   verbatimTextOutput("summary"),
+  # A table output
   tableOutput("table")
 )
 ```
 
 - `fluidPage()` - A layout function that sets up the basic visual structure of the page
-- `selectInput()` An input control that lets the user interact with the app by providing a value
+- `selectInput()` - An input control that lets the user interact with the app by providing a value from a dropdown menu
 - `verbatimTextOutput()` -  An output controls that tell Shiny where to put rendered output: displays code
 - `tableOutput()` - An output controls that tell Shiny where to put rendered output: displays tables
 
-To make things work, we need to handle the behavior next
+To make things work, we need to handle the behavior next.
 
 ## Adding Behavior
 
 ```R
 # Define Server Logic
 server <- function(input, output, session) {
+  # Render the summary of the dataset as codes
   output$summary <- renderPrint({
     dataset <- get(input$dataset, "package:datasets")
     summary(dataset)
   })
-  
+  # Render the dataset as table
   output$table <- renderTable({
     dataset <- get(input$dataset, "package:datasets")
     dataset
+  })
+}
+```
+
+This is a typical pattern: Each `render*` function is designed to work with a particular type of output that’s passed to an `*Output` function
+
+```R
+output$ID <- renderTYPE({
+  # Expression that generates whatever kind of output
+  # renderTYPE expects
+})
+```
+
+## Reducing Duplications
+
+- We should always stive to reduce duplicated codes as much as possible
+- Typical R solutions: Use *Variables* or use *Functions*
+- With Shiny: Use *Reactive Expressions*
+  - Wrap a block of code in `reactive({...})` and assigning it to a variable
+  - Use by calling it like a function
+- Difference with function: **It only runs the first time it is called and then it caches its result until it needs to be updated.**
+  - More efficient because of caching
+
+```R
+server <- function(input, output, session) {
+  # Making this shared part into a reactive expression
+  dataset <- reactive({
+    get(input$dataset, "package:datasets")
+  })
+
+  output$summary <- renderPrint({
+    summary(dataset())
+  })
+  
+  output$table <- renderTable({
+    dataset()
   })
 }
 ```
