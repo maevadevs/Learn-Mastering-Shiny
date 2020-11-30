@@ -29,6 +29,16 @@
 - Leverage automation processes
 - Create prototypes of web applications
 
+## Prerequisites
+
+- R
+- RStudio
+- Packages:
+
+```r
+install.packages(c("gapminder", "ggforce", "globals", "openintro", "shiny", "shinycssloaders", "shinyFeedback", "shinythemes", "testthat", "thematic", "tidyverse", "vroom", "waiter", "xml2", "zeallot"))
+```
+
 ## Complentary Resources
 
 - [Shiny Documentations](https://shiny.rstudio.com/articles/)
