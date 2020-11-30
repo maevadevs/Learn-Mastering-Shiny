@@ -2,28 +2,62 @@
 
 Just my notes from reading *Mastering Shiny*
 
+## Parts
+
+1. **Getting started**
+- The basics of Shiny
+- The basics of app structure
+- Useful UI components
+- The foundations of reactive programming
+2. **Shiny in action** 
+- Solve common problems: 
+  - Giving feedback to the user
+  - Uploading and downloading data
+  - Generating UI with code
+  - Reducing code duplication
+  - Using Shiny to program the tidyverse
+3. **Mastering reactivity**
+- In-depth theory and practice of reactive programming
+4. **Best practices** 
+- Survey of useful techniques for making your Shiny apps work well in production
+- How to decompose complex apps into functions and modules
+- How to use packages to organise your code
+- How to test your code to ensure it’s correct
+- How to measure and improve performance
+
 ## Contents
 
+### Getting Started 
+
 1. [Introduction](https://github.com/maevadevs/mastering-shiny/blob/main/introduction.md)
-1. [Hello Shiny](https://github.com/maevadevs/mastering-shiny/blob/main/hello-shiny.md)
-1. Basic UI
-1. Basic reactivity
-1. Case study: ER injuries
-1. Workflow
-1. Graphics
-1. User feedback
-1. Uploads and downloads
-1. Dynamic UI
-1. Bookmarking
-1. Tidy evaluation
-1. Why reactivity?
-1. The reactive graph
-1. Reactive building blocks
-1. Escaping the graph
-1. General guidelines
-1. Functions
-1. Shiny modules
-1. Packages
-1. Testing
-1. Security
-1. Performance
+2. [Hello Shiny](https://github.com/maevadevs/mastering-shiny/blob/main/hello-shiny.md)
+3. Basic UI
+4. Basic reactivity
+5. Case study: ER injuries
+
+### Shiny In Action
+
+6. Workflow
+7. Graphics
+8. User feedback
+9. Uploads and downloads
+10. Dynamic UI
+11. Bookmarking
+12. Tidy evaluation
+
+### Matering Reactivity
+
+13. Why reactivity?
+14. The reactive graph
+15. Reactive building blocks
+16. Escaping the graph
+
+### Best Practices
+
+17. General guidelines
+18. Functions
+19. Shiny modules
+20. Packages
+21. Testing
+22. Security
+23. Performance
