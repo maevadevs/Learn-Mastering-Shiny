@@ -87,3 +87,58 @@ Let the user perform an action: These are most naturally paired with `observeEve
 - `actionLink`
 <!---->
 - `class` argument: `btn-primary`, `btn-success`, `btn-info`, `btn-warning`, `btn-danger`, `btn-lg`, `btn-sm`, `btn-xs`, `btn-block`
+
+## Outputs
+
+- Placeholders in the UI that are later filled by the server
+- The first argument is always the `outputId`
+  - Identifier used to connect the front-end with the back-end
+  - Accessible in the server as `output$outputId`
+  - Has 2 constraints:
+    - Must contain only letters, numbers, and underscores
+    - Must be unique
+- Each output is coupled with a `render` function in the backend
+- There are 3 main types of outputs:
+  - Texts
+  - Tables
+  - Plots
+
+**You should do as little computation in the server's render functions as possible**
+
+### Texts
+
+- `textOutput` - Regular text
+- `VerbatimOutput` - Fixed code and console text outputs
+<!---->
+- `renderText()` - combines the result into a single string
+- `renderPrint()` - prints the result
+
+### Tables
+
+- `tableOutput` - Usefule for small tables
+- `dataTableOutput` - Usefull for complete data frames
+<!---->
+- `renderTable()` - render a static table of data, showing all the data at once
+- `renderDataTable()` - render a dynamic table, showing a fixed number of rows along with controls to change which rows are visible
+
+### Plots
+
+- `plotOutput` - Display any type of R graphic
+  - By default, it will take up the full width of its container and  400px high
+  - Use `width` and `height` to override
+  - *Recommended: always set `res=96` as that will make your Shiny plots match what you see in RStudio as closely as possible*
+- `renderPlot()` - render any type of R graphic
+<!---->
+- Plots are special because they are outputs that can also act as inputs
+  - `click`, `dblclick`, and `hover` for reactive inputs
+
+### Downloads
+
+- `downloadButton`
+- `downloadLink`
+
+## Layouts
+
+
+
+
