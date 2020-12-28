@@ -31,7 +31,7 @@ These are my personal notes from reading the book [*Mastering Shiny*](https://ma
 
 1. [Introduction](https://github.com/maevadevs/mastering-shiny/blob/main/introduction.md)
 2. [Hello Shiny](https://github.com/maevadevs/mastering-shiny/blob/main/hello-shiny.md)
-3. Basic UI
+3. [Basic UI](https://github.com/maevadevs/mastering-shiny/blob/main/basic-ui.md)
 4. Basic reactivity
 5. Case study: ER injuries
 
