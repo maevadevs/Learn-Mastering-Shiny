@@ -215,9 +215,8 @@ fluidPage(
 
 ## Under The Hood
 
-
-
-
-
-
-
+- Shiny code **is** R code
+- You can use any R techniques with Shiny
+- If you copy and paste code more than three times, you should consider writing a function or using a for loop
+- All input, output, and layout functions return HTML
+  - You can see the HTML by executing UI functions directly in the console
