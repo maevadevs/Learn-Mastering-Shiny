@@ -139,6 +139,85 @@ Let the user perform an action: These are most naturally paired with `observeEve
 
 ## Layouts
 
+- Layouts are about arranging the inputs and outputs on the page
+- High-level visual structure of an app
+- Created by a hierarchy of function calls
+
+```r
+fluidPage(
+  titlePanel(),
+  sidebarLayout(
+    sidebarPanel(
+      sliderInput("obs")
+    ),
+    mainPanel(
+      plotOutput("distPlot")
+    )
+  )
+)
+```
+
+### Page Functions
+
+#### `fluidPage()`
+
+- Uses a *Bootstrap* layout system with Bootstrap's defaults
+- Technically, `fluidPage()` is all you need for an app
+  - You can put inputs and outputs directly inside of it
+  - But dumping all the inputs and outputs in one place doesn’t look very good
+
+#### Page With Sidebar
+
+Create a two-column layout with inputs on the left and outputs on the right
+
+- `sidebarLayout()` - Establish that we are using a sidebar style layout
+- `titlePanel()` - Set the overall app title
+- `sidebarPanel()` - Define the area for the sidebar and all its contents (inputs)
+- `mainPanel()` - Defines the area for the main panel and all of its contents (outputs)
+
+#### Multi-Row
+
+- `sidebarLayout()` is built on top of a flexible multi-row layout
+- Each `fluidRow()` can be subdivided into its own number of columns, up to 12
+- We can set columns with `column()`
+  - The first argument is the `width` of the column
+  - `1` is the smallest, `12` is the largest
+
+```r
+fluidPage(
+  fluidRow(
+    column(4, 
+      ...
+    ),
+    column(8, 
+      ...
+    )
+  ),
+  fluidRow(
+    column(6, 
+      ...
+    ),
+    column(6, 
+      ...
+    )
+  )
+)
+```
+
+#### Themes
+
+- Creating a complete theme from scratch is a lot of work but often worth it
+- But we can get some easy wins by using the [shinythemes](https://rstudio.github.io/shinythemes/) package
+- Other good resources:
+  - [Theme Selector](https://shiny.rstudio.com/gallery/shiny-theme-selector.html)
+  - [fresh](https://dreamrs.github.io/fresh/)
+  - [bs4Dash](https://github.com/RinteRface/bs4Dash)
+
+## Under The Hood
+
+
+
+
 
 
 
