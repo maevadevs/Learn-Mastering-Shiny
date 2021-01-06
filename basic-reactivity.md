@@ -369,5 +369,5 @@ server <- function(input, output, session) {
 
 - Do not assign the result of `observeEvent()` to a variable
 - Cannot refer to `observeEvent()` from other reactive consumers
-<1---->
+<!---->
 - Observers and outputs are closely related
